@@ -1,0 +1,12 @@
+name: "Terraform Format Check"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  format:
+    uses: enagas-devops/enagas-actions/.github/workflows/tf_fmt.yaml@main
+    with:
+      tf_version: 1.0.3

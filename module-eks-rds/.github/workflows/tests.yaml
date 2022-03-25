@@ -1,0 +1,10 @@
+name: "Terraform Test Module"
+
+on:
+  push:
+
+jobs:
+  format:
+    uses: enagas-devops/enagas-actions/.github/workflows/tf_test.yaml@main
+    with:
+      tf_versions: 1.0.3
